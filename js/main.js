@@ -1,5 +1,3 @@
-const API_URL = "http://localhost:8000/api/";
-
 const getOwners = async () => {
 	try {
 		const response = await fetch(`${API_URL}owners/`, {

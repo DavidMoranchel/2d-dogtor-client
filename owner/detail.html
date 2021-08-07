@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="styles/output.css" type="text/css" rel="stylesheet" />
+		<link href="/styles/output.css" type="text/css" rel="stylesheet" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -562,6 +562,83 @@
 					<main class="flex-1 relative z-0 overflow-y-auto focus:outline-none">
 						<!-- Start main area-->
 						<div class="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
+							<div>
+								<h3 class="text-lg leading-6 font-medium text-gray-900">
+									Pet Owner Information
+								</h3>
+								<p class="mt-1 max-w-2xl text-sm text-gray-500">
+									Pet owner details and pets.
+								</p>
+							</div>
+							<div class="mt-5 border-t border-gray-200">
+								<dl class="divide-y divide-gray-200">
+									<div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4">
+										<dt class="text-sm font-medium text-gray-500">Full name</dt>
+										<dd
+											class="
+												mt-1
+												flex
+												text-sm text-gray-900
+												sm:mt-0 sm:col-span-2
+											"
+										>
+											<span id="owner-fullName" class="flex-grow"
+												>Margot Foster</span
+											>
+										</dd>
+									</div>
+									<div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+										<dt class="text-sm font-medium text-gray-500">
+											Mobile number
+										</dt>
+										<dd
+											class="
+												mt-1
+												flex
+												text-sm text-gray-900
+												sm:mt-0 sm:col-span-2
+											"
+										>
+											<span id="owner-mobile" class="flex-grow"
+												>Backend Developer</span
+											>
+										</dd>
+									</div>
+									<div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+										<dt class="text-sm font-medium text-gray-500">
+											Email address
+										</dt>
+										<dd
+											class="
+												mt-1
+												flex
+												text-sm text-gray-900
+												sm:mt-0 sm:col-span-2
+											"
+										>
+											<span id="owner-email" class="flex-grow"
+												>margotfoster@example.com</span
+											>
+										</dd>
+									</div>
+									<div class="py-4 sm:grid sm:py-5 sm:grid-cols-3 sm:gap-4">
+										<dt class="text-sm font-medium text-gray-500">Address</dt>
+										<dd
+											class="
+												mt-1
+												flex
+												text-sm text-gray-900
+												sm:mt-0 sm:col-span-2
+											"
+										>
+											<span id="owner-address" class="flex-grow">
+												$120,000</span
+											>
+										</dd>
+									</div>
+								</dl>
+							</div>
+
 							<div
 								class="
 									h-full
@@ -572,7 +649,7 @@
 									box-border
 								"
 							>
-								<ul id="owners" class="divide-y divide-gray-200"></ul>
+								<ul id="pets" class="divide-y divide-gray-200"></ul>
 							</div>
 						</div>
 						<!-- End main area -->
@@ -605,6 +682,6 @@
 		></script>
 		<script src="/js/constants.js"></script>
 		<script src="/js/builders.js"></script>
-		<script defer src="/js/main.js"></script>
+		<script defer src="/js/ownerDetail.js"></script>
 	</body>
 </html>
