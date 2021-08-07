@@ -1,6 +1,10 @@
 const getOwnerDetail = async (id) => {
 	try {
-		const response = await fetch(`${API_URL}owners/${id}`);
+		const response = await fetch(`${API_URL}owners/${id}`, {
+			headers: {
+				Authorization: `Token ${AUTH_TOKEN}`,
+			},
+		});
 		return await response.json();
 	} catch (error) {
 		console.log(error);

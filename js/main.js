@@ -3,6 +3,7 @@ const getOwners = async () => {
 		const response = await fetch(`${API_URL}owners/`, {
 			headers: {
 				"Content-Type": "application/json",
+				Authorization: `Token ${AUTH_TOKEN}`,
 			},
 		});
 		const data = await response.json();
