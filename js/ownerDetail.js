@@ -16,4 +16,9 @@ $(document).ready(async () => {
 	$("#owner-mobile").text(owner.phone);
 	$("#owner-email").text(owner.email);
 	$("#owner-address").text(owner.address);
+
+	const petsUI = owner.pets.map(({ id, name, type }) =>
+		buildPetLI(id, name, type)
+	);
+	$("#pets").html(petsUI);
 });
